@@ -1,0 +1,6 @@
+digraph G {
+        graph [fontname="DejaVu Sans",bgcolor="white",pad="0.35",nodesep="0.5",ranksep="0.75",splines=polyline];
+        node [shape=box,style="rounded,filled",color="#4F46E5",fillcolor="#EEF2FF",fontcolor="#111827",fontname="DejaVu Sans",fontsize=12,margin="0.18,0.13"];
+        edge [color="#64748B",fontcolor="#334155",fontname="DejaVu Sans",fontsize=10,arrowsize=.75];
+     rankdir=TB; pedido [label="Pedido\ncalcularValorFinal(forma)"]; forma [label="FormaPagamento\n(interface)"]; pix [label="FormaPagamentoPix"]; debito [label="FormaPagamentoDebito"]; credito [label="FormaPagamentoCredito"]; pedido -> forma [label="usa"]; forma -> pix [arrowhead=empty,dir=back]; forma -> debito [arrowhead=empty,dir=back]; forma -> credito [arrowhead=empty,dir=back]; 
+}
